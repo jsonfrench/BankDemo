@@ -9,20 +9,20 @@ public class BankAccountTester {
 		BankAccount walter = new BankAccount("walter", 737000);
 		BankAccount bezos= new BankAccount ("bezos", 1000000000);
 		
-		System.out.printf("%s has %.2f%n", fred.getOwner(), fred.getBalance());
-		System.out.printf("%s has %.2f%n", macy.getOwner(), macy.getBalance());
-		System.out.printf("%s has %.2f%n", walter.getOwner(), walter.getBalance());
-		System.out.printf("%s has %.2f%n", bezos.getOwner(), bezos.getBalance());
+		System.out.printf("%s has $%.2f%n", fred.getOwner(), fred.getBalance());
+		System.out.printf("%s has $%.2f%n", macy.getOwner(), macy.getBalance());
+		System.out.printf("%s has $%.2f%n", walter.getOwner(), walter.getBalance());
+		System.out.printf("%s has $%.2f%n", bezos.getOwner(), bezos.getBalance());
 
 		fred.depositMoney(400);
 		macy.depositMoney(1);
-		walter.depositMoney(10000000);
-		bezos.withdrawMoney(737000);
+		walter.chargeFees();
+		bezos.payInterest();
 		
-		System.out.printf("%s has %.2f%n", fred.getOwner(), fred.getBalance());
-		System.out.printf("%s has %.2f%n", macy.getOwner(), macy.getBalance());
-		System.out.printf("%s has %.2f%n", walter.getOwner(), walter.getBalance());
-		System.out.printf("%s has %.2f%n", bezos.getOwner(), bezos.getBalance());
+		System.out.printf("%s has $%.2f%n", fred.getOwner(), fred.getBalance());
+		System.out.printf("%s has $%.2f%n", macy.getOwner(), macy.getBalance());
+		System.out.printf("%s has $%.2f%n", walter.getOwner(), walter.getBalance());
+		System.out.printf("%s has $%.2f%n", bezos.getOwner(), bezos.getBalance());
 		
 
 	}

@@ -31,5 +31,13 @@ public class BankAccount {
 		return owner;
 	}
 	
+	public void chargeFees() {
+		balance *= 0.99;
+	}
+	
+	public void payInterest() {
+		balance *= 1.03;
+	}
+	
 	
 }
